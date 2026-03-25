@@ -15,7 +15,7 @@ export const metadata = {
 export default function TheHeartThatRefusesToSleepPage() {
   return (
     <main className="page-shell theme-islamic-night">
-      <section className="hero">
+      <section className="hero hero-omar">
         <div className="hero-glow" />
         <div className="container">
           <nav className="nav">
@@ -28,7 +28,7 @@ export default function TheHeartThatRefusesToSleepPage() {
           </nav>
 
           <div className="hero-grid">
-            <div className="hero-copy">
+            <div className="hero-copy hero-copy-omar">
               <div className="eyebrow">Faith, Character, Justice, Hope</div>
               <h1 className="title-stack">
                 <span className="title-person">Omar Suleiman</span>
@@ -39,6 +39,10 @@ export default function TheHeartThatRefusesToSleepPage() {
                 organized around identity, hardship, discipline, love, justice, public
                 witness, and the kind of hope that can survive a dark age.
               </p>
+              <blockquote className="hero-quote-omar">
+                Faith, in this vision, is not merely a set of doctrines to defend. It
+                is a way of seeing.
+              </blockquote>
               <div className="hero-actions">
                 <CheckoutButton
                   className="button button-primary"
@@ -61,9 +65,10 @@ export default function TheHeartThatRefusesToSleepPage() {
               </div>
             </div>
 
-            <div className="hero-book">
-              <div className="book-card panel">
-                <div className="book-cover">
+            <div className="hero-book hero-book-omar">
+              <div className="book-card panel book-card-omar">
+                <div className="book-cover book-cover-omar">
+                  <div className="arch-light" />
                   <div>
                     <div className="eyebrow">Reflective e-book</div>
                     <div className="book-title title-stack">
@@ -75,6 +80,7 @@ export default function TheHeartThatRefusesToSleepPage() {
                     For readers who want a faith that is inwardly serious, publicly
                     awake, and still capable of hope.
                   </p>
+                  <div className="book-footer-chip">Justice, character, hope</div>
                 </div>
               </div>
             </div>
@@ -96,9 +102,9 @@ export default function TheHeartThatRefusesToSleepPage() {
             </p>
           </div>
 
-          <div className="chapter-grid">
+          <div className="chapter-grid chapter-grid-omar">
             {omarSections.map((item) => (
-              <article className="chapter-card" key={item.title}>
+              <article className="chapter-card chapter-card-omar" key={item.title}>
                 <span>{item.label}</span>
                 <h3>{item.title}</h3>
                 <p>{item.copy}</p>
@@ -111,7 +117,7 @@ export default function TheHeartThatRefusesToSleepPage() {
       <section className="section" id="offer">
         <div className="container">
           <div className="offer-grid">
-            <div className="stack-card">
+            <div className="stack-card stack-card-omar-main">
               <div className="eyebrow">The offer</div>
               <div className="price-tag">
                 {omarPrice} <small>one-time</small>
@@ -165,7 +171,7 @@ export default function TheHeartThatRefusesToSleepPage() {
 
           <div className="faq-grid">
             {omarFaqs.map((item) => (
-              <article className="faq-card" key={item.question}>
+              <article className="faq-card faq-card-omar" key={item.question}>
                 <h3>{item.question}</h3>
                 <p>{item.answer}</p>
               </article>

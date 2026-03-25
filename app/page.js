@@ -13,7 +13,7 @@ import {
 export default function HomePage() {
   return (
     <main className="page-shell theme-futurist">
-      <section className="hero">
+      <section className="hero hero-dario">
         <div className="hero-glow" />
         <div className="container">
           <nav className="nav">
@@ -26,7 +26,7 @@ export default function HomePage() {
           </nav>
 
           <div className="hero-grid">
-            <div className="hero-copy">
+            <div className="hero-copy hero-copy-dario">
               <div className="eyebrow">Scaling Laws to Biological Breakthroughs</div>
               <h1 className="title-stack">
                 <span className="title-person">Dario Amodei</span>
@@ -38,6 +38,11 @@ export default function HomePage() {
                 scientific acceleration, safety, and the civilizational challenge of
                 intelligence abundance.
               </p>
+              <div className="signal-strip">
+                <div className="signal-pill">Biology acceleration</div>
+                <div className="signal-pill">AI safety</div>
+                <div className="signal-pill">Datacenter intelligence</div>
+              </div>
               <div className="hero-actions">
                 <CheckoutButton className="button button-primary">
                   Buy the e-book for {price}
@@ -57,9 +62,11 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="hero-book">
-              <div className="book-card panel">
-                <div className="book-cover">
+            <div className="hero-book hero-book-dario">
+              <div className="book-card panel book-card-dario">
+                <div className="book-cover book-cover-dario">
+                  <div className="book-orbit" />
+                  <div className="book-gridline" />
                   <div>
                     <div className="eyebrow">Reflective e-book</div>
                     <div className="book-title title-stack">
@@ -72,6 +79,7 @@ export default function HomePage() {
                     medicine, and why safety becomes more important as intelligence
                     becomes more abundant.
                   </p>
+                  <div className="book-footer-chip">Frontier systems briefing</div>
                 </div>
               </div>
             </div>
@@ -94,9 +102,9 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="metrics-grid">
+          <div className="metrics-grid metrics-grid-dario">
             {metrics.map((item) => (
-              <article className="metrics-card" key={item.title}>
+              <article className="metrics-card metrics-card-dario" key={item.title}>
                 <span>{item.label}</span>
                 <h3>{item.title}</h3>
                 <p>{item.copy}</p>
@@ -120,9 +128,9 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="chapter-grid">
+          <div className="chapter-grid chapter-grid-dario">
             {chapters.map((item) => (
-              <article className="chapter-card" key={item.title}>
+              <article className="chapter-card chapter-card-dario" key={item.title}>
                 <span>{item.label}</span>
                 <h3>{item.title}</h3>
                 <p>{item.copy}</p>
@@ -148,7 +156,7 @@ export default function HomePage() {
 
           <div className="quotes-grid">
             {quotes.map((item) => (
-              <article className="quote-card" key={item.quote}>
+              <article className="quote-card quote-card-dario" key={item.quote}>
                 <span>{item.label}</span>
                 <p>{item.quote}</p>
                 <strong>{item.source}</strong>
@@ -161,7 +169,7 @@ export default function HomePage() {
       <section className="section" id="offer">
         <div className="container">
           <div className="offer-grid">
-            <div className="stack-card">
+            <div className="stack-card stack-card-dario-main">
               <div className="eyebrow">The offer</div>
               <div className="price-tag">
                 {price} <small>one-time</small>
@@ -184,7 +192,7 @@ export default function HomePage() {
 
             <div className="stack-list">
               {stack.map((item) => (
-                <article className="stack-card" key={item.title}>
+                <article className="stack-card stack-card-dario" key={item.title}>
                   <h3>{item.title}</h3>
                   <p>{item.copy}</p>
                 </article>
@@ -210,7 +218,7 @@ export default function HomePage() {
 
           <div className="bonus-grid">
             {bonusIdeas.map((item) => (
-              <article className="bonus-card" key={item.title}>
+              <article className="bonus-card bonus-card-dario" key={item.title}>
                 <h3>{item.title}</h3>
                 <p>{item.copy}</p>
               </article>
@@ -235,7 +243,7 @@ export default function HomePage() {
 
           <div className="faq-grid">
             {faqs.map((item) => (
-              <article className="faq-card" key={item.question}>
+              <article className="faq-card faq-card-dario" key={item.question}>
                 <h3>{item.question}</h3>
                 <p>{item.answer}</p>
               </article>
@@ -246,7 +254,7 @@ export default function HomePage() {
 
       <section className="section">
         <div className="container">
-          <div className="footer-cta panel">
+          <div className="footer-cta panel footer-cta-dario">
             <div className="eyebrow">Direct-to-reader launch</div>
             <h2>Sell the thesis, then let checkout do its job.</h2>
             <p>

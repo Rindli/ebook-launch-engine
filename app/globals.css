@@ -151,6 +151,185 @@ a {
     linear-gradient(180deg, rgba(48, 38, 28, 0.96), rgba(29, 22, 16, 0.98));
 }
 
+.hero-dario .container,
+.hero-omar .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-copy-dario {
+  padding-right: 1rem;
+}
+
+.signal-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.signal-pill {
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(17, 31, 64, 0.68);
+  color: #dce8ff;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.book-card-dario {
+  transform: rotate(0deg);
+  padding: 0.9rem;
+}
+
+.book-cover-dario {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(110, 171, 255, 0.16);
+}
+
+.book-orbit {
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+  top: -8rem;
+  right: -7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(109, 175, 255, 0.18);
+  box-shadow:
+    0 0 0 1.5rem rgba(94, 156, 255, 0.05),
+    0 0 0 4rem rgba(94, 156, 255, 0.03);
+}
+
+.book-gridline {
+  position: absolute;
+  inset: auto 0 5rem 0;
+  height: 8rem;
+  background:
+    linear-gradient(transparent, rgba(88, 130, 214, 0.08)),
+    repeating-linear-gradient(
+      90deg,
+      rgba(112, 161, 255, 0.08) 0,
+      rgba(112, 161, 255, 0.08) 1px,
+      transparent 1px,
+      transparent 3.4rem
+    );
+  opacity: 0.85;
+}
+
+.book-footer-chip {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.metrics-grid-dario {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.metrics-card-dario,
+.chapter-card-dario,
+.quote-card-dario,
+.stack-card-dario,
+.bonus-card-dario,
+.faq-card-dario,
+.stack-card-dario-main,
+.footer-cta-dario {
+  background:
+    linear-gradient(180deg, rgba(13, 22, 44, 0.92), rgba(8, 15, 30, 0.94));
+  border-color: rgba(117, 171, 255, 0.12);
+}
+
+.metrics-card-dario h3,
+.chapter-card-dario h3,
+.stack-card-dario h3,
+.stack-card-dario-main h3,
+.bonus-card-dario h3,
+.faq-card-dario h3,
+.footer-cta-dario h2 {
+  color: #edf6ff;
+}
+
+.metrics-card-dario p,
+.chapter-card-dario p,
+.stack-card-dario p,
+.stack-card-dario-main p,
+.bonus-card-dario p,
+.faq-card-dario p,
+.quote-card-dario p,
+.quote-card-dario strong,
+.footer-cta-dario p,
+.footer-cta-dario .micro {
+  color: #9ab0c8;
+}
+
+.quote-card-dario {
+  border-left: 3px solid rgba(97, 192, 255, 0.5);
+}
+
+.hero-copy-omar {
+  padding-right: 1rem;
+}
+
+.hero-quote-omar {
+  margin: 1.25rem 0 0;
+  padding: 1rem 1.1rem 1rem 1.25rem;
+  border-left: 3px solid rgba(198, 161, 95, 0.7);
+  background: rgba(255, 248, 235, 0.06);
+  color: #e9dcc5;
+  font-size: 1.03rem;
+  line-height: 1.8;
+}
+
+.book-card-omar {
+  transform: rotate(-1deg);
+}
+
+.book-cover-omar {
+  position: relative;
+  overflow: hidden;
+}
+
+.arch-light {
+  position: absolute;
+  top: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 17rem;
+  height: 12rem;
+  border-radius: 17rem 17rem 0 0;
+  border: 1px solid rgba(203, 170, 104, 0.18);
+  background: radial-gradient(circle at 50% 80%, rgba(215, 173, 96, 0.12), transparent 62%);
+}
+
+.chapter-grid-omar .chapter-card-omar,
+.stack-card-omar-main,
+.faq-card-omar {
+  background:
+    linear-gradient(180deg, rgba(40, 31, 23, 0.94), rgba(28, 22, 16, 0.96));
+  border-color: rgba(207, 176, 118, 0.12);
+}
+
+.chapter-card-omar h3,
+.stack-card-omar-main h3,
+.faq-card-omar h3 {
+  color: #f5ead8;
+}
+
+.chapter-card-omar p,
+.stack-card-omar-main p,
+.faq-card-omar p {
+  color: #d0c0aa;
+}
+
 .container {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
