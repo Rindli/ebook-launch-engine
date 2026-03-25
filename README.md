@@ -2,7 +2,7 @@
 
 This repo contains a premium direct-to-consumer storefront for the e-book plus launch collateral:
 
-- a Next.js landing page with provider-switched checkout
+- a Next.js multi-product landing page system with provider-switched checkout
 - a Stripe or Lemon Squeezy checkout route
 - short-form traffic scripts
 - a safety-first email funnel
@@ -10,6 +10,7 @@ This repo contains a premium direct-to-consumer storefront for the e-book plus l
 - a Digital Twin / Amodei-Bot upsell concept
 - timed PDF fulfillment after successful Stripe checkout
 - MailerLite buyer sync after successful Stripe checkout
+- four independent e-book product flows
 
 ## Run locally
 
