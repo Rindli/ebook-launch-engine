@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function GuideToInnerReformPage() {
   return (
-    <main className="page-shell">
+    <main className="page-shell theme-islamic-sand">
       <section className="hero">
         <div className="hero-glow" />
         <div className="container">
@@ -30,7 +30,10 @@ export default function GuideToInnerReformPage() {
           <div className="hero-grid">
             <div className="hero-copy">
               <div className="eyebrow">Imam al-Ghazali for Modern Readers</div>
-              <h1>A slow-reading guide to self-diagnosis, sincerity, and inward reform.</h1>
+              <h1 className="title-stack">
+                <span className="title-person">Imam al-Ghazali</span>
+                <span className="title-work">Guide to Inner Reform</span>
+              </h1>
               <p>
                 A reflective synthesis built around Imam al-Ghazali's enduring questions:
                 what corrupts intention, what heals the heart, what doubt can teach,
@@ -63,7 +66,10 @@ export default function GuideToInnerReformPage() {
                 <div className="book-cover">
                   <div>
                     <div className="eyebrow">Reflective e-book</div>
-                    <div className="book-title">Guide to Inner Reform</div>
+                    <div className="book-title title-stack">
+                      <span className="title-person">Imam al-Ghazali</span>
+                      <span className="title-work">Guide to Inner Reform</span>
+                    </div>
                   </div>
                   <p className="book-note">
                     For readers who feel intellectually crowded but inwardly unclear,

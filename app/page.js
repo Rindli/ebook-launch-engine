@@ -12,7 +12,7 @@ import {
 
 export default function HomePage() {
   return (
-    <main className="page-shell">
+    <main className="page-shell theme-futurist">
       <section className="hero">
         <div className="hero-glow" />
         <div className="container">
@@ -28,7 +28,10 @@ export default function HomePage() {
           <div className="hero-grid">
             <div className="hero-copy">
               <div className="eyebrow">Scaling Laws to Biological Breakthroughs</div>
-              <h1>The premium field guide to Dario Amodei&apos;s most consequential ideas.</h1>
+              <h1 className="title-stack">
+                <span className="title-person">Dario Amodei</span>
+                <span className="title-work">The Quiet Exponential</span>
+              </h1>
               <p>
                 A high-signal synthesis of Dario Amodei&apos;s 2024-2026 interviews,
                 focused on the transition from model scaling to AI-enabled biology,
@@ -59,7 +62,10 @@ export default function HomePage() {
                 <div className="book-cover">
                   <div>
                     <div className="eyebrow">Reflective e-book</div>
-                    <div className="book-title">The Quiet Exponential</div>
+                    <div className="book-title title-stack">
+                      <span className="title-person">Dario Amodei</span>
+                      <span className="title-work">The Quiet Exponential</span>
+                    </div>
                   </div>
                   <p className="book-note">
                     What Dario Amodei sees coming, what it means for work and

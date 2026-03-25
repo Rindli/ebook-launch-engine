@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function WealthWithBarakahPage() {
   return (
-    <main className="page-shell">
+    <main className="page-shell theme-islamic-emerald">
       <section className="hero">
         <div className="hero-glow" />
         <div className="container">

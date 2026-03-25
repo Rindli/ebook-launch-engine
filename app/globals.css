@@ -34,6 +34,9 @@ a {
 
 .page-shell {
   min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.8), transparent 34%),
+    linear-gradient(180deg, #f9f5ef 0%, #f3eadc 46%, #efe0cb 100%);
 }
 
 .hero-glow {
@@ -44,6 +47,108 @@ a {
     radial-gradient(circle at 85% 20%, rgba(220, 181, 132, 0.26), transparent 28%),
     radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.85), transparent 34%);
   pointer-events: none;
+}
+
+.theme-futurist {
+  --ink: #d9ebff;
+  --muted: #94abca;
+  --line: rgba(115, 172, 255, 0.14);
+  --accent: #61c0ff;
+  --accent-deep: #3460de;
+  --panel: rgba(8, 14, 30, 0.72);
+  --shadow: 0 28px 62px rgba(5, 10, 20, 0.42);
+  background:
+    radial-gradient(circle at 16% 12%, rgba(89, 154, 255, 0.24), transparent 22%),
+    radial-gradient(circle at 85% 18%, rgba(43, 203, 255, 0.16), transparent 20%),
+    linear-gradient(180deg, #07111f 0%, #0d1830 56%, #131d34 100%);
+}
+
+.theme-futurist .hero-glow {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(60, 121, 255, 0.28), transparent 24%),
+    radial-gradient(circle at 85% 20%, rgba(71, 221, 255, 0.14), transparent 22%),
+    linear-gradient(180deg, rgba(132, 174, 255, 0.06), transparent 44%);
+}
+
+.theme-futurist .book-cover {
+  background:
+    radial-gradient(circle at top right, rgba(101, 174, 255, 0.14), transparent 34%),
+    linear-gradient(180deg, rgba(15, 26, 50, 0.96), rgba(8, 15, 33, 0.98));
+}
+
+.theme-islamic-emerald {
+  --ink: #1f271f;
+  --muted: #53604f;
+  --line: rgba(47, 78, 58, 0.14);
+  --accent: #3b7554;
+  --accent-deep: #244936;
+  --panel: rgba(252, 249, 241, 0.8);
+  --shadow: 0 22px 56px rgba(42, 58, 38, 0.12);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.76), transparent 34%),
+    linear-gradient(180deg, #f7f3ea 0%, #edf1e4 48%, #e4ebdc 100%);
+}
+
+.theme-islamic-sand {
+  --ink: #2a2117;
+  --muted: #655744;
+  --line: rgba(121, 97, 67, 0.15);
+  --accent: #8f6b3b;
+  --accent-deep: #624723;
+  --panel: rgba(255, 249, 239, 0.8);
+  --shadow: 0 22px 56px rgba(79, 58, 28, 0.12);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.74), transparent 34%),
+    linear-gradient(180deg, #f8f1e4 0%, #f2e6d1 48%, #ead8bc 100%);
+}
+
+.theme-islamic-night {
+  --ink: #f2eee7;
+  --muted: #cdbfa9;
+  --line: rgba(214, 184, 142, 0.15);
+  --accent: #c6a15f;
+  --accent-deep: #8d6733;
+  --panel: rgba(34, 27, 20, 0.8);
+  --shadow: 0 22px 60px rgba(9, 7, 5, 0.34);
+  background:
+    radial-gradient(circle at top, rgba(153, 109, 39, 0.12), transparent 32%),
+    linear-gradient(180deg, #17120d 0%, #211911 48%, #2a2117 100%);
+}
+
+.theme-islamic-emerald .book-cover,
+.theme-islamic-sand .book-cover,
+.theme-islamic-night .book-cover {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-islamic-emerald .book-cover::before,
+.theme-islamic-sand .book-cover::before,
+.theme-islamic-night .book-cover::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 1px solid rgba(171, 140, 84, 0.22);
+  border-radius: 1rem;
+  pointer-events: none;
+}
+
+.theme-islamic-emerald .book-cover {
+  background:
+    radial-gradient(circle at top left, rgba(72, 118, 86, 0.1), transparent 28%),
+    linear-gradient(180deg, rgba(255, 252, 244, 0.96), rgba(242, 237, 226, 0.96));
+}
+
+.theme-islamic-sand .book-cover {
+  background:
+    radial-gradient(circle at top left, rgba(165, 128, 71, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 251, 243, 0.96), rgba(245, 233, 210, 0.96));
+}
+
+.theme-islamic-night .book-cover {
+  background:
+    radial-gradient(circle at top left, rgba(198, 162, 94, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(48, 38, 28, 0.96), rgba(29, 22, 16, 0.98));
 }
 
 .container {
@@ -97,6 +202,25 @@ a {
   margin: 1rem 0;
   font-size: clamp(3rem, 7vw, 5.9rem);
   line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.title-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.title-person {
+  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.title-work {
+  font-size: clamp(2.5rem, 6vw, 5.4rem);
+  line-height: 0.94;
   letter-spacing: -0.05em;
 }
 
@@ -198,6 +322,14 @@ a {
   font-size: clamp(2.4rem, 5vw, 4rem);
   line-height: 0.94;
   letter-spacing: -0.04em;
+}
+
+.book-title .title-person {
+  font-size: 0.9rem;
+}
+
+.book-title .title-work {
+  font-size: inherit;
 }
 
 .book-note {
@@ -366,5 +498,9 @@ a {
 
   .book-cover {
     min-height: 28rem;
+  }
+
+  .title-work {
+    font-size: clamp(2.25rem, 10vw, 4.2rem);
   }
 }

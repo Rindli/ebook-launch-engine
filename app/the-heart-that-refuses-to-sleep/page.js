@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function TheHeartThatRefusesToSleepPage() {
   return (
-    <main className="page-shell">
+    <main className="page-shell theme-islamic-night">
       <section className="hero">
         <div className="hero-glow" />
         <div className="container">
@@ -30,7 +30,10 @@ export default function TheHeartThatRefusesToSleepPage() {
           <div className="hero-grid">
             <div className="hero-copy">
               <div className="eyebrow">Faith, Character, Justice, Hope</div>
-              <h1>A reflective editorial guide to living with more clarity, courage, and mercy.</h1>
+              <h1 className="title-stack">
+                <span className="title-person">Omar Suleiman</span>
+                <span className="title-work">The Heart That Refuses to Sleep</span>
+              </h1>
               <p>
                 A polished synthesis built from Omar Suleiman's public conversations,
                 organized around identity, hardship, discipline, love, justice, public
@@ -63,7 +66,10 @@ export default function TheHeartThatRefusesToSleepPage() {
                 <div className="book-cover">
                   <div>
                     <div className="eyebrow">Reflective e-book</div>
-                    <div className="book-title">The Heart That Refuses to Sleep</div>
+                    <div className="book-title title-stack">
+                      <span className="title-person">Omar Suleiman</span>
+                      <span className="title-work">The Heart That Refuses to Sleep</span>
+                    </div>
                   </div>
                   <p className="book-note">
                     For readers who want a faith that is inwardly serious, publicly
