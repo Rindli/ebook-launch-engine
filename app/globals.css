@@ -50,30 +50,30 @@ a {
 }
 
 .theme-futurist {
-  --ink: #d9ebff;
-  --muted: #94abca;
-  --line: rgba(115, 172, 255, 0.14);
-  --accent: #61c0ff;
-  --accent-deep: #3460de;
-  --panel: rgba(8, 14, 30, 0.72);
-  --shadow: 0 28px 62px rgba(5, 10, 20, 0.42);
+  --ink: #1f3550;
+  --muted: #5e7ea2;
+  --line: rgba(92, 152, 220, 0.18);
+  --accent: #69bfff;
+  --accent-deep: #3b89d1;
+  --panel: rgba(239, 247, 255, 0.78);
+  --shadow: 0 28px 62px rgba(98, 145, 194, 0.16);
   background:
-    radial-gradient(circle at 16% 12%, rgba(89, 154, 255, 0.24), transparent 22%),
-    radial-gradient(circle at 85% 18%, rgba(43, 203, 255, 0.16), transparent 20%),
-    linear-gradient(180deg, #07111f 0%, #0d1830 56%, #131d34 100%);
+    radial-gradient(circle at 16% 12%, rgba(139, 204, 255, 0.34), transparent 24%),
+    radial-gradient(circle at 85% 18%, rgba(127, 220, 255, 0.18), transparent 20%),
+    linear-gradient(180deg, #f4fbff 0%, #e5f3ff 56%, #d7ebfb 100%);
 }
 
 .theme-futurist .hero-glow {
   background:
-    radial-gradient(circle at 15% 20%, rgba(60, 121, 255, 0.28), transparent 24%),
-    radial-gradient(circle at 85% 20%, rgba(71, 221, 255, 0.14), transparent 22%),
-    linear-gradient(180deg, rgba(132, 174, 255, 0.06), transparent 44%);
+    radial-gradient(circle at 15% 20%, rgba(106, 184, 255, 0.34), transparent 24%),
+    radial-gradient(circle at 85% 20%, rgba(103, 214, 255, 0.18), transparent 22%),
+    linear-gradient(180deg, rgba(175, 217, 255, 0.12), transparent 44%);
 }
 
 .theme-futurist .book-cover {
   background:
-    radial-gradient(circle at top right, rgba(101, 174, 255, 0.14), transparent 34%),
-    linear-gradient(180deg, rgba(15, 26, 50, 0.96), rgba(8, 15, 33, 0.98));
+    radial-gradient(circle at top right, rgba(128, 208, 255, 0.2), transparent 34%),
+    linear-gradient(180deg, rgba(245, 251, 255, 0.97), rgba(222, 238, 250, 0.98));
 }
 
 .theme-islamic-emerald {
@@ -103,16 +103,16 @@ a {
 }
 
 .theme-islamic-night {
-  --ink: #f2eee7;
-  --muted: #cdbfa9;
-  --line: rgba(214, 184, 142, 0.15);
-  --accent: #c6a15f;
-  --accent-deep: #8d6733;
-  --panel: rgba(34, 27, 20, 0.8);
-  --shadow: 0 22px 60px rgba(9, 7, 5, 0.34);
+  --ink: #f2efe5;
+  --muted: #c8c3ad;
+  --line: rgba(175, 171, 122, 0.16);
+  --accent: #a7aa6f;
+  --accent-deep: #6a7042;
+  --panel: rgba(33, 37, 25, 0.82);
+  --shadow: 0 22px 60px rgba(10, 12, 8, 0.34);
   background:
-    radial-gradient(circle at top, rgba(153, 109, 39, 0.12), transparent 32%),
-    linear-gradient(180deg, #17120d 0%, #211911 48%, #2a2117 100%);
+    radial-gradient(circle at top, rgba(125, 132, 73, 0.16), transparent 32%),
+    linear-gradient(180deg, #171b12 0%, #1f2418 48%, #283021 100%);
 }
 
 .theme-islamic-emerald .book-cover,
@@ -147,8 +147,8 @@ a {
 
 .theme-islamic-night .book-cover {
   background:
-    radial-gradient(circle at top left, rgba(198, 162, 94, 0.12), transparent 24%),
-    linear-gradient(180deg, rgba(48, 38, 28, 0.96), rgba(29, 22, 16, 0.98));
+    radial-gradient(circle at top left, rgba(164, 171, 103, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(48, 56, 37, 0.96), rgba(28, 34, 22, 0.98));
 }
 
 .hero-dario .container,
@@ -172,8 +172,8 @@ a {
   padding: 0.55rem 0.85rem;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(17, 31, 64, 0.68);
-  color: #dce8ff;
+  background: rgba(255, 255, 255, 0.62);
+  color: #315a84;
   font-size: 0.82rem;
   letter-spacing: 0.04em;
 }
@@ -244,8 +244,8 @@ a {
 .stack-card-dario-main,
 .footer-cta-dario {
   background:
-    linear-gradient(180deg, rgba(13, 22, 44, 0.92), rgba(8, 15, 30, 0.94));
-  border-color: rgba(117, 171, 255, 0.12);
+    linear-gradient(180deg, rgba(247, 252, 255, 0.94), rgba(226, 239, 249, 0.95));
+  border-color: rgba(104, 162, 218, 0.16);
 }
 
 .metrics-card-dario h3,
@@ -255,7 +255,7 @@ a {
 .bonus-card-dario h3,
 .faq-card-dario h3,
 .footer-cta-dario h2 {
-  color: #edf6ff;
+  color: #204061;
 }
 
 .metrics-card-dario p,
@@ -268,7 +268,7 @@ a {
 .quote-card-dario strong,
 .footer-cta-dario p,
 .footer-cta-dario .micro {
-  color: #9ab0c8;
+  color: #6883a0;
 }
 
 .quote-card-dario {
@@ -282,9 +282,9 @@ a {
 .hero-quote-omar {
   margin: 1.25rem 0 0;
   padding: 1rem 1.1rem 1rem 1.25rem;
-  border-left: 3px solid rgba(198, 161, 95, 0.7);
-  background: rgba(255, 248, 235, 0.06);
-  color: #e9dcc5;
+  border-left: 3px solid rgba(167, 170, 111, 0.78);
+  background: rgba(246, 244, 228, 0.05);
+  color: #ece7d8;
   font-size: 1.03rem;
   line-height: 1.8;
 }
@@ -306,28 +306,28 @@ a {
   width: 17rem;
   height: 12rem;
   border-radius: 17rem 17rem 0 0;
-  border: 1px solid rgba(203, 170, 104, 0.18);
-  background: radial-gradient(circle at 50% 80%, rgba(215, 173, 96, 0.12), transparent 62%);
+  border: 1px solid rgba(171, 176, 112, 0.18);
+  background: radial-gradient(circle at 50% 80%, rgba(171, 176, 112, 0.12), transparent 62%);
 }
 
 .chapter-grid-omar .chapter-card-omar,
 .stack-card-omar-main,
 .faq-card-omar {
   background:
-    linear-gradient(180deg, rgba(40, 31, 23, 0.94), rgba(28, 22, 16, 0.96));
-  border-color: rgba(207, 176, 118, 0.12);
+    linear-gradient(180deg, rgba(44, 50, 34, 0.94), rgba(30, 35, 24, 0.96));
+  border-color: rgba(171, 176, 112, 0.14);
 }
 
 .chapter-card-omar h3,
 .stack-card-omar-main h3,
 .faq-card-omar h3 {
-  color: #f5ead8;
+  color: #eef1df;
 }
 
 .chapter-card-omar p,
 .stack-card-omar-main p,
 .faq-card-omar p {
-  color: #d0c0aa;
+  color: #c8ceb3;
 }
 
 .container {
