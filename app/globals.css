@@ -103,16 +103,16 @@ a {
 }
 
 .theme-islamic-night {
-  --ink: #f2efe5;
-  --muted: #c8c3ad;
-  --line: rgba(175, 171, 122, 0.16);
-  --accent: #a7aa6f;
-  --accent-deep: #6a7042;
-  --panel: rgba(33, 37, 25, 0.82);
-  --shadow: 0 22px 60px rgba(10, 12, 8, 0.34);
+  --ink: #31402b;
+  --muted: #66775d;
+  --line: rgba(147, 159, 116, 0.18);
+  --accent: #a7b07a;
+  --accent-deep: #748053;
+  --panel: rgba(246, 247, 236, 0.84);
+  --shadow: 0 22px 60px rgba(109, 120, 82, 0.14);
   background:
-    radial-gradient(circle at top, rgba(125, 132, 73, 0.16), transparent 32%),
-    linear-gradient(180deg, #171b12 0%, #1f2418 48%, #283021 100%);
+    radial-gradient(circle at top, rgba(177, 190, 138, 0.28), transparent 34%),
+    linear-gradient(180deg, #fbfcf4 0%, #eef2df 48%, #e5ecd4 100%);
 }
 
 .theme-islamic-emerald .book-cover,
@@ -147,8 +147,8 @@ a {
 
 .theme-islamic-night .book-cover {
   background:
-    radial-gradient(circle at top left, rgba(164, 171, 103, 0.12), transparent 24%),
-    linear-gradient(180deg, rgba(48, 56, 37, 0.96), rgba(28, 34, 22, 0.98));
+    radial-gradient(circle at top left, rgba(182, 193, 140, 0.18), transparent 24%),
+    linear-gradient(180deg, rgba(251, 252, 244, 0.98), rgba(232, 238, 216, 0.98));
 }
 
 .hero-dario .container,
@@ -283,8 +283,8 @@ a {
   margin: 1.25rem 0 0;
   padding: 1rem 1.1rem 1rem 1.25rem;
   border-left: 3px solid rgba(167, 170, 111, 0.78);
-  background: rgba(246, 244, 228, 0.05);
-  color: #ece7d8;
+  background: rgba(255, 255, 255, 0.56);
+  color: #495842;
   font-size: 1.03rem;
   line-height: 1.8;
 }
@@ -314,20 +314,20 @@ a {
 .stack-card-omar-main,
 .faq-card-omar {
   background:
-    linear-gradient(180deg, rgba(44, 50, 34, 0.94), rgba(30, 35, 24, 0.96));
-  border-color: rgba(171, 176, 112, 0.14);
+    linear-gradient(180deg, rgba(251, 252, 244, 0.95), rgba(234, 239, 220, 0.96));
+  border-color: rgba(159, 170, 121, 0.18);
 }
 
 .chapter-card-omar h3,
 .stack-card-omar-main h3,
 .faq-card-omar h3 {
-  color: #eef1df;
+  color: #31402b;
 }
 
 .chapter-card-omar p,
 .stack-card-omar-main p,
 .faq-card-omar p {
-  color: #c8ceb3;
+  color: #66775d;
 }
 
 .container {
