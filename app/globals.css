@@ -89,6 +89,19 @@ a {
     linear-gradient(180deg, #f7f3ea 0%, #edf1e4 48%, #e4ebdc 100%);
 }
 
+.theme-islamic-amber {
+  --ink: #362114;
+  --muted: #735741;
+  --line: rgba(156, 98, 34, 0.18);
+  --accent: #f1b14a;
+  --accent-deep: #b56a22;
+  --panel: rgba(255, 245, 231, 0.82);
+  --shadow: 0 24px 64px rgba(100, 53, 17, 0.16);
+  background:
+    radial-gradient(circle at top, rgba(255, 203, 107, 0.36), transparent 32%),
+    linear-gradient(180deg, #fff6e8 0%, #f9e8cc 48%, #f0d4ad 100%);
+}
+
 .theme-islamic-sand {
   --ink: #2a2117;
   --muted: #655744;
@@ -116,6 +129,7 @@ a {
 }
 
 .theme-islamic-emerald .book-cover,
+.theme-islamic-amber .book-cover,
 .theme-islamic-sand .book-cover,
 .theme-islamic-night .book-cover {
   position: relative;
@@ -123,6 +137,7 @@ a {
 }
 
 .theme-islamic-emerald .book-cover::before,
+.theme-islamic-amber .book-cover::before,
 .theme-islamic-sand .book-cover::before,
 .theme-islamic-night .book-cover::before {
   content: "";
@@ -137,6 +152,12 @@ a {
   background:
     radial-gradient(circle at top left, rgba(72, 118, 86, 0.1), transparent 28%),
     linear-gradient(180deg, rgba(255, 252, 244, 0.96), rgba(242, 237, 226, 0.96));
+}
+
+.theme-islamic-amber .book-cover {
+  background:
+    radial-gradient(circle at top left, rgba(255, 190, 84, 0.18), transparent 28%),
+    linear-gradient(180deg, rgba(255, 250, 240, 0.98), rgba(249, 229, 196, 0.98));
 }
 
 .theme-islamic-sand .book-cover {
@@ -176,6 +197,11 @@ a {
   color: #315a84;
   font-size: 0.82rem;
   letter-spacing: 0.04em;
+}
+
+.signal-pill-warm {
+  background: rgba(255, 248, 236, 0.72);
+  color: #8d5622;
 }
 
 .book-card-dario {
@@ -277,6 +303,94 @@ a {
 
 .hero-copy-omar {
   padding-right: 1rem;
+}
+
+.hero-copy-barakah {
+  padding-right: 1rem;
+}
+
+.title-subline {
+  font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+  color: var(--accent-deep);
+  letter-spacing: 0.02em;
+}
+
+.book-card-barakah {
+  transform: rotate(-1deg);
+}
+
+.book-cover-barakah {
+  position: relative;
+  overflow: hidden;
+  min-height: 36rem;
+}
+
+.barakah-lantern {
+  position: absolute;
+  bottom: 3.25rem;
+  width: 4.2rem;
+  height: 8rem;
+  border-radius: 1.6rem 1.6rem 1rem 1rem;
+  background:
+    linear-gradient(180deg, rgba(123, 63, 20, 0.94), rgba(71, 36, 12, 0.98));
+  box-shadow:
+    0 0 0 1px rgba(125, 72, 23, 0.2),
+    0 0 32px rgba(255, 174, 67, 0.24);
+}
+
+.barakah-lantern::after {
+  content: "";
+  position: absolute;
+  inset: 1rem 0.9rem 0.9rem;
+  border-radius: 0.8rem;
+  background: radial-gradient(circle at 50% 70%, rgba(255, 214, 133, 0.95), rgba(255, 173, 48, 0.58) 54%, transparent 78%);
+}
+
+.barakah-lantern-left {
+  left: 1.4rem;
+}
+
+.barakah-lantern-right {
+  right: 1.4rem;
+}
+
+.barakah-stage {
+  position: absolute;
+  inset: auto 1.2rem 1.2rem;
+  height: 9rem;
+  border-radius: 1.4rem;
+  background:
+    radial-gradient(circle at 50% 10%, rgba(255, 188, 91, 0.18), transparent 55%),
+    linear-gradient(180deg, rgba(120, 63, 20, 0.16), rgba(86, 42, 11, 0.08));
+}
+
+.chapter-grid-barakah .chapter-card-barakah,
+.stack-card-barakah-main,
+.stack-card-barakah,
+.faq-card-barakah,
+.quote-card-barakah,
+.footer-cta-barakah {
+  background:
+    linear-gradient(180deg, rgba(255, 250, 242, 0.94), rgba(247, 230, 202, 0.95));
+  border-color: rgba(186, 116, 34, 0.16);
+}
+
+.chapter-card-barakah h3,
+.stack-card-barakah-main h3,
+.stack-card-barakah h3,
+.faq-card-barakah h3,
+.footer-cta-barakah h2 {
+  color: #5d3415;
+}
+
+.chapter-card-barakah p,
+.stack-card-barakah-main p,
+.stack-card-barakah p,
+.faq-card-barakah p,
+.quote-card-barakah p,
+.quote-card-barakah strong,
+.footer-cta-barakah p {
+  color: #7b5a41;
 }
 
 .hero-quote-omar {
